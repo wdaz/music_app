@@ -1,0 +1,41 @@
+.header {
+
+    .search {
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        background-color: #484545;
+
+        .fa-search {
+            color: white;
+            font-size: 1.2rem;
+            margin-right: 5px;
+        }
+
+        .form-control {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            border-radius: 0;
+            color: white;
+
+            &:focus {
+                box-shadow: none;
+            }
+
+            &::placeholder {
+                color: white;
+            }
+
+            &:-webkit-autofill,
+            &:-webkit-autofill:hover,
+            &:-webkit-autofill:focus,
+            &:-webkit-autofill:active {
+                -webkit-box-shadow: 0 0 0 30px #484545 inset !important;
+                -webkit-text-fill-color: white!important;
+                background-image: none !important;
+            }
+        }
+    }
+}
+
